@@ -2,7 +2,7 @@
 
 
 /**
- * push_e -pushes an element to the stack.
+ * push_e - pushes an element to the stack.
  * @new_node: Pointer
  * @l_nmb: Int
  */
@@ -27,13 +27,13 @@ void push_e(stack_t **new_node, __attribute__((unused))unsigned int l_nmb)
  * print_all_values - prints all the values on the stack,
  * starting from the top of the stack.
  * @stack: Pointer
- * @line_number: line number
+ * @l_nmb: line number
  */
-void print_all_values(stack_t **stack, unsigned int line_number)
+void print_all_values(stack_t **stack, unsigned int l_nmb)
 {
 	stack_t *tmp;
 
-	(void) line_number;
+	(void) l_nmb;
 	if (stack == NULL)
 		exit(EXIT_FAILURE);
 	tmp = *stack;

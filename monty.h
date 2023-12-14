@@ -50,7 +50,7 @@ int line_by_line(char *buffer, int line_number, int format);
 void find_function(char *opcode, char *value, int l_nmb, int format);
 void up_function(op_func func, char *op, char *num_val, int l_nmb, int format);
 void push_e(stack_t **new_node, __attribute__((unused))unsigned int l_nmb);
-void print_all_values(stack_t **stack, unsigned int line_number);
+void print_all_values(stack_t **stack, unsigned int l_nmb);
 void top_of_stack(stack_t **stack, unsigned int line_number);
 void rmv_top_of_stack(stack_t **stack, unsigned int line_number);
 void print_character(stack_t **stack, unsigned int line_number);
