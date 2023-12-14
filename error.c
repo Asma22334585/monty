@@ -41,7 +41,7 @@ void errors_msg(int e_m, ...)
 		default:
 			break;
 	}
-	free_nodes();
+	f_nodes();
 	exit(EXIT_FAILURE);
 }
 /**
@@ -81,7 +81,7 @@ void other_errors(int e_m, ...)
 		default:
 			break;
 	}
-	free_nodes();
+	f_nodes();
 	exit(EXIT_FAILURE);
 }
 
@@ -109,6 +109,6 @@ void str_errors(int e_m, ...)
 		default:
 			break;
 	}
-	free_nodes();
+	f_nodes();
 	exit(EXIT_FAILURE);
 }

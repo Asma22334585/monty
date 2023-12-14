@@ -3,17 +3,17 @@
  * line_by__line - Separates each line into token
  * @buffer: line from the file
  * @line_number: int
- * @f: storage format
+ * @format: storage format
  * Return: Returns 0 if stack, 1 if queue
  */
 
-int line_by_line(char *buffer, int line_number, int f)
+int line_by_line(char *buffer, int line_number, int format)
 {
 	char *opcode, *x;
 	const char *delim = "\n ";
 
 	if (!buffer)
-		err(4);
+		errors_msg(4);
 
 	opcode = strtok(buffer, delim);
 	if (!opcode)
@@ -25,6 +25,6 @@ int line_by_line(char *buffer, int line_number, int f)
 	if (strcmp(opcode, "queue") == 0)
 		return (1);
 
-	find_function(opcode, x, line_number, f);
-	return (f);
+	find_function(opcode, x, line_number, format);
+	return (format);
 }

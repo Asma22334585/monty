@@ -2,12 +2,12 @@
 /**
  * find_function - find the appropriate function for the opcode
  * @opcode: opcode
- * @x: argument
+ * @value: argument
  * @format:  storage format
  * @l_nmb: line number
  * Return: void
  */
-void find_function(char *opcode, char *x, int l_nmb, int format)
+void find_function(char *opcode, char *value, int l_nmb, int format)
 {
 	int y;
 	int flag;
@@ -18,7 +18,7 @@ void find_function(char *opcode, char *x, int l_nmb, int format)
 		{"pint", top_of_stack},
 		{"pop", rmv_top_of_stack},
 		{"nop", nop},
-		{"swap", s_top_t_e},
+		{"swap", sw_top_t_e},
 		{"add", a_top_t_e},
 		{"sub", s_top_t_e},
 		{"div", div_e},
@@ -43,5 +43,5 @@ void find_function(char *opcode, char *x, int l_nmb, int format)
 		}
 	}
 	if (flag == 1)
-		err(3, l_nmb, opcode);
+		errors_msg(3, l_nmb, opcode);
 }

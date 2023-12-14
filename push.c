@@ -6,7 +6,7 @@
  * @new_node: Pointer
  * @l_nmb: Int
  */
-void push_element(stack_t **new_node, __attribute__((unused))unsigned int ln)
+void push_element(stack_t **new_node, __attribute__((unused))unsigned int l_nmb)
 {
 	stack_t *tmp;
 
