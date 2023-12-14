@@ -5,6 +5,7 @@
  * push_e - pushes an element to the stack.
  * @new_node: Pointer
  * @l_nmb: Int
+ * Return: void
  */
 void push_e(stack_t **new_node, __attribute__((unused))unsigned int l_nmb)
 {
@@ -28,6 +29,7 @@ void push_e(stack_t **new_node, __attribute__((unused))unsigned int l_nmb)
  * starting from the top of the stack.
  * @stack: Pointer
  * @l_nmb: line number
+ * Return: void
  */
 void print_all_v(stack_t **stack, __attribute__((unused))unsigned int l_nmb)
 {
