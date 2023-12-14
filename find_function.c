@@ -14,7 +14,7 @@ void find_function(char *opcode, char *value, int l_nmb, int format)
 
 	instruction_t list_function[] = {
 		{"push", push_e},
-		{"pall", print_all_values},
+		{"pall", print_all_v},
 		{"pint", top_of_stack},
 		{"pop", rmv_top_of_stack},
 		{"nop", nop},

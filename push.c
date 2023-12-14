@@ -24,16 +24,15 @@ void push_e(stack_t **new_node, __attribute__((unused))unsigned int l_nmb)
 }
 
 /**
- * print_all_values - prints all the values on the stack,
+ * print_all_v - prints all the values on the stack,
  * starting from the top of the stack.
  * @stack: Pointer
  * @l_nmb: line number
  */
-void print_all_values(stack_t **stack, unsigned int l_nmb)
+void print_all_v(stack_t **stack, __attribute__((unused))unsigned int l_nmb)
 {
 	stack_t *tmp;
 
-	(void) l_nmb;
 	if (stack == NULL)
 		exit(EXIT_FAILURE);
 	tmp = *stack;
