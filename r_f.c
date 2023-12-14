@@ -7,13 +7,13 @@
 
 void r_f(FILE *file_desc)
 {
-	int line_number, format = 0;
+	int l_n, format = 0;
 	char *buffer = NULL;
 	size_t length = 0;
 
-	for (line_number = 1; getline(&buffer, &length, file_desc) != -1; line_number++)
+	for (l_n = 1; getline(&buffer, &length, file_desc) != -1; l_n++)
 	{
-		format = line_by_line(buffer, line_number, format);
+		format = line_by_line(buffer, l_n, format);
 	}
 	free(buffer);
 }

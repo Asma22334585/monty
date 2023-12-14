@@ -1,6 +1,6 @@
 #include "monty.h"
 /**
- * errors_msg - Prints appropiate error messages determined by their error code.
+ * errors_msg - Print errors
  * @e_m: The message error:
  * (1) => If the user does not give any file or more than one argument.
  * (2) => If, for any reason, it’s not possible to open the file.

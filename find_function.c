@@ -13,7 +13,7 @@ void find_function(char *opcode, char *value, int l_nmb, int format)
 	int flag;
 
 	instruction_t list_function[] = {
-		{"push", push_element},
+		{"push", push_e},
 		{"pall", print_all_values},
 		{"pint", top_of_stack},
 		{"pop", rmv_top_of_stack},

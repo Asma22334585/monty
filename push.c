@@ -2,11 +2,11 @@
 
 
 /**
- * push_element -pushes an element to the stack.
+ * push_e -pushes an element to the stack.
  * @new_node: Pointer
  * @l_nmb: Int
  */
-void push_element(stack_t **new_node, __attribute__((unused))unsigned int l_nmb)
+void push_e(stack_t **new_node, __attribute__((unused))unsigned int l_nmb)
 {
 	stack_t *tmp;
 

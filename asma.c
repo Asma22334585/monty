@@ -1,4 +1,5 @@
 #include "monty.h"
+
 stack_t *head = NULL;
 
 /**
@@ -23,19 +24,19 @@ int main(int argc, char *argv[])
 /**
  * f_nodes - Frees nodes at stack.
  */
+
 void f_nodes(void)
 {
-        stack_t *tmp;
+	stack_t *tmp;
 
-        if (head == NULL)
-                return;
-
-        while (head != NULL)
-        {
-                tmp = head;
-                head = head->next;
-                free(tmp);
-        }
+	if (head == NULL)
+		return;
+	while (head != NULL)
+	{
+		tmp = head;
+		head = head->next;
+		free(tmp);
+	}
 }
 
 /**
@@ -78,5 +79,4 @@ void a_q(stack_t **new_node, __attribute__((unused))unsigned int l_nmb)
 
 	tmp->next = *new_node;
 	(*new_node)->prev = tmp;
-
 }
