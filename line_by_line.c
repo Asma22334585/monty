@@ -1,6 +1,6 @@
 #include "monty.h"
 /**
- * line_by__line - Separates each line into token
+ * line_by_line - Separates each line into token
  * @buffer: line from the file
  * @line_number: int
  * @format: storage format
